@@ -1,9 +1,9 @@
 # SAP Cloud Platform IoT service an Application Enablement config files
 
-Create Package:
+## Create Package:
 
-HOST: ## https://{{tenant_id}}.iot-sap.cfapps.eu10.hana.ondemand.com/appcore-conf/Configuration
+### HOST: https://{{tenant_id}}.iot-sap.cfapps.eu10.hana.ondemand.com/appcore-conf/Configuration
 
-HTTP Method: POST
+### HTTP Method: POST
 
-Paylod: create-iot-application-enablement-config
+### Paylod: create-iot-application-enablement-config
