@@ -1,1 +1,2 @@
-# sap-scp-iot-config-files
+# SAP Cloud Platform IoT service an Application Enablement config files
+
