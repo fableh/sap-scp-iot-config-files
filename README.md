@@ -6,4 +6,4 @@ HOST: https://{{tenant_id}}.iot-sap.cfapps.eu10.hana.ondemand.com/appcore-conf/C
 
 HTTP Method: POST
 
-Paylod/File: create-iot-application-enablement-config
+Paylod/File: create-iot-application-enablement-config.json
