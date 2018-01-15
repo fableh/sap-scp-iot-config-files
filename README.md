@@ -2,7 +2,7 @@
 
 ## Create Package:
 
-HOST: "https://{{tenant_id}}.iot-sap.cfapps.eu10.hana.ondemand.com/appcore-conf/Configuration"
+HOST: https://{{tenant_id}}.iot-sap.cfapps.eu10.hana.ondemand.com/appcore-conf/Configuration
 
 HTTP Method: POST
 
