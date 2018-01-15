@@ -1,0 +1,105 @@
+# HTTP Method POST
+# Endpoint: https://<iot-ae-host>/appcore-conf/Configuration
+
+{
+    "id": "<your package prefix tenant>.syc.iot.command",
+    "version": "1.0.3",
+    "scope": "private",
+    "description": {
+        "en": ""
+    },
+    "dependencies": [],
+    "services": {
+        "dataService": {
+            "thingTypes": [
+                {
+                    "name": "iotae.sycor.syc.iot.command:MyNB",
+                    "description": {
+                        "en": ""
+                    },
+                    "propertyTypes": [
+                        {
+                            "id": "CPU",
+                            "description": {
+                                "en": ""
+                            },
+                            "propertySetType": "iotae.sycor.syc.iot.command:CPU"
+                        },
+                        {
+                            "id": "Image",
+                            "propertySetType": "iotae.sycor.syc.iot.command:Image"
+                        }
+                    ]
+                }
+            ],
+            "propertySetTypes": [
+                {
+                    "name": "iotae.sycor.syc.iot.command:Default",
+                    "description": {
+                        "en": "Default PST"
+                    },
+                    "dataCategory": "MasterData",
+                    "propertyTypes": []
+                },
+                {
+                    "name": "iotae.sycor.syc.iot.command:Image",
+                    "description": {
+                        "en": "Image properties"
+                    },
+                    "dataCategory": "MasterData",
+                    "propertyTypes": [
+                        {
+                            "value": {
+                                "description": {},
+                                "id": "ImageName",
+                                "length": "127",
+                                "type": "String"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "iotae.sycor.syc.iot.command:CPU",
+                    "description": {
+                        "en": ""
+                    },
+                    "dataCategory": "TimeSeriesData",
+                    "propertyTypes": [
+                        {
+                            "value": {
+                                "description": {},
+                                "id": "usage",
+                                "type": "NumericFlexible",
+                                "qualityCode": "0"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "iotae.sycor.syc.iot.command:Ref70556",
+                    "description": {
+                        "en": "ReferencePropertyData"
+                    },
+                    "dataCategory": "ReferencePropertyData",
+                    "referredPropertySetType": "iotae.sycor.syc.iot.command:CPU",
+                    "propertyTypes": [
+                        {
+                            "value": {
+                                "id": "Command67428",
+                                "referenceProperty": "usage",
+                                "attributeType": "com.sap.iot.core.Command"
+                            }
+                        },
+                        {
+                            "value": {
+                                "id": "UoM60529",
+                                "referenceProperty": "usage",
+                                "attributeType": "com.sap.iot.core.UoM"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
